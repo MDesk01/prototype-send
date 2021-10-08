@@ -1,0 +1,14 @@
+.sidenav{
+    position: fixed;
+    border: solid 1px black;
+}
+
+.header{
+    z-index: 4;
+    position: fixed;
+}
+
+.content{
+    margin-left: 2%;
+    margin-right: 2%;
+}

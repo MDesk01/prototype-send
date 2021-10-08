@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title><i class="fas fa-info-circle"></i>&nbsp;Solicitação de Inclusão de Atividades Complementares</mat-card-title>
+    <mat-card-subtitle>Código: {{atividade.id}}</mat-card-subtitle>
+    <strong>Título: </strong><span>{{atividade.name}}</span><br>
+    <strong>Carga Horária: </strong><span>{{atividade.horas}}</span>h.<br>
+    <strong>Status de Processo: </strong><span>{{atividade.status}}</span><br>
+
+
+
+    <br>
+    <button mat-raised-button (click)="voltar()" color="primary"><i class="fas fa-arrow-circle-left"></i>&nbsp;Voltar</button>
+</mat-card>

@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-title>Auditar Atividade Complementar</mat-card-title>
+    
+    <span>Aluno:</span>&nbsp;<span>Nome do Aluno aqui</span>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título" [(ngModel)]="atividade.name" name="name" disabled>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Horas" [(ngModel)]="atividade.horas" name="horas" disabled>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Status</mat-label>
+            <select matNativeControl [(ngModel)]="selectedStatus" name="status">
+                <option value="" selected></option>
+                <option *ngFor="let status of statuss" [value]="status.value">
+                    <p [(ngModel)]="atividade.status">{{status.viewValue}}</p>
+                </option>
+            </select>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Confirmar Status (Reescreva)" name="status" [(ngModel)]="selectedStatus"
+                [(ngModel)]="atividade.status" required />
+        </mat-form-field>
+        <br>
+
+
+    </form>
+
+    <button mat-raised-button (click)="updateAtividade()" color="primary">Atualizar</button>&nbsp;
+    <button mat-raised-button (click)="cancel()" color="warn">Cancelar</button>
+</mat-card>

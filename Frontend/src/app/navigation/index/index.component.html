@@ -1,0 +1,21 @@
+<!--header-->
+<mat-toolbar class="header mat-elevation-z4">
+    <button mat-raised-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+</mat-toolbar>
+<mat-toolbar style="background-color: transparent;"></mat-toolbar>
+
+<mat-drawer-container>
+
+    <!--navegação lateral-->
+    <mat-drawer #drawer mode="over" class="sidenav">
+        <app-sidenav></app-sidenav>
+    </mat-drawer>
+
+    <!--content-->
+    <mat-drawer-content class="content">
+        <br>
+        <router-outlet></router-outlet>
+        <br>
+    </mat-drawer-content>
+
+</mat-drawer-container>

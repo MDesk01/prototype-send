@@ -1,0 +1,5 @@
+.btn-auditar:hover{
+    transition: 1s;
+    background-color: blue;
+    color: white;
+}

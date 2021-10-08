@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Confirmar exclusão da atividade</mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="atividade.name" name="name" disabled>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Horas" [value]="atividade.horas" name="horas" disabled>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Status" [value]="atividade.status" name="status" disabled>
+        </mat-form-field>
+    </form>
+
+    <p style="color: red;">Tem certeza que deseja excluir esta atividade?</p>
+    <button mat-raised-button (click)="deleteAtividade()" color="warn">Excluir</button>&nbsp;
+    <button mat-raised-button (click)="cancel()" color="primary">Cancelar</button>
+</mat-card>
