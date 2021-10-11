@@ -14,17 +14,19 @@
                 <td>{{atividade.status}}</td>
                 <td>
                     <a routerLink="/processos/vizualizacao-aluno/{{atividade.id}}"> <button mat-mini-fab
-                            style="background-color:blue;"><i class="fas fa-info"></i></button>
+                            style="background-color: #4051b6;"><i class="fas fa-info"></i></button>
                     </a>
                     &nbsp;
                     <a routerLink="/processos/exclusao/{{atividade.id}}"><button mat-mini-fab
-                            style="background-color: red;"><i class="far fa-trash-alt"></i></button></a>
+                            style="background-color: rgba(255, 0, 0, 0.842);"><i class="far fa-trash-alt"></i></button></a>
                 </td>
             </tr>
         </tbody>
     </table>
+    <div style="text-align: left;">
     <mat-card-subtitle><span style="font-weight: bolder; color: black;">Total de Horas
             Deferidas:</span>&nbsp;<span>00h.</span></mat-card-subtitle>
-    <mat-card-subtitle><span style="font-weight: bolder; color: black;">Horas Restantes:</span>&nbsp;<span>00h.</span>
+    <mat-card-subtitle><span style="font-weight: bolder; color: black;">Horas Restantes:</span>&nbsp;<span>50h.</span>
     </mat-card-subtitle>
+    </div>
 </mat-card>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Atividade } from '../atividade.model';
 import { AtividadeService } from '../atividade.service';
@@ -12,7 +13,16 @@ export class VizualizacaoAlunoComponent implements OnInit {
 
   atividade!: Atividade
 
-  constructor(private atividadeService: AtividadeService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private atividadeService: AtividadeService, private router: Router, private route: ActivatedRoute, public dialog: MatDialog) { }
+
+  //dialog-download-archive
+  openDialog() {
+    const dialogRef = this.dialog.open(DownloadContent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')!;
@@ -28,3 +38,9 @@ export class VizualizacaoAlunoComponent implements OnInit {
     }
 
 }
+
+@Component({
+  selector: 'download-content',
+  templateUrl: 'download-content.html',
+})
+export class DownloadContent {}

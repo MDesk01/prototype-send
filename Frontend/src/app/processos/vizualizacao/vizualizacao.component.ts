@@ -22,7 +22,4 @@ export class VizualizacaoComponent implements OnInit {
 
   }
 
-
-
-
 }
