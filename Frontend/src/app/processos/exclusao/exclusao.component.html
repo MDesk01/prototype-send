@@ -1,9 +1,13 @@
 <mat-card>
-    <mat-card-title><i class="far fa-trash-alt"></i>&nbsp;Confirmar Exclusão</mat-card-title>
+    <mat-card-title style="font-family: 'Poppins'; color: #1d3557;"><i class="far fa-trash-alt"></i>&nbsp;Confirmar Exclusão</mat-card-title>
     <br>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Nome" [value]="atividade.name" name="name" disabled>
+            <input matInput placeholder="Código" [value]="atividade.id" name="id" disabled>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Título" [value]="atividade.name" name="name" disabled>
         </mat-form-field>
         <br>
         <mat-form-field>

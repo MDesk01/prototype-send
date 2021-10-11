@@ -1,7 +1,7 @@
 <mat-card>
-    <mat-card-title><i class="fas fa-info-circle"></i>&nbsp;Solicitação de Inclusão
+    <mat-card-title style="font-family: 'Poppins'; color: #1d3557;"><i class="fas fa-info-circle"></i>&nbsp;Detalhes da Atividade
     </mat-card-title>
-    <mat-card-subtitle>Código: {{atividade.id}}</mat-card-subtitle>
+    <mat-card-subtitle>Código: #{{atividade.id}}</mat-card-subtitle>
 
     <strong>Título: </strong><span>{{atividade.name}}</span><br>
     <strong>Carga Horária: </strong><span>{{atividade.horas}}</span>h.<br>
@@ -9,15 +9,11 @@
     <strong>Tipo de Atividade: </strong><span>{{atividade.doc}}</span>
     <br>
     <br>
-
-
-
-
-    <button mat-mini-fab style="background-color: green; color: white;"
+    <button mat-mini-fab style="background-color: #43aa8b; color: white;"
         routerLink="/processos/edicao/{{atividade.id}}"><i class="far fa-edit"></i></button>
     &nbsp;
-    <button mat-raised-button (click)="openDialog()" class="btn-download"><i class="fas fa-cloud-download-alt"></i>&nbsp;Download dos
-        Anexos</button>
+
+    <button mat-mini-fab (click)="openDialog()" style="background-color: #f3722c; color: white;"><i class="fas fa-cloud-download-alt"></i></button>
     <br>
     <br>
 

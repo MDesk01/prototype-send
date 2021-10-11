@@ -1,5 +1,5 @@
 <mat-card>
-    <mat-card-title><i class="far fa-edit"></i>&nbsp;Editar Atividade</mat-card-title>
+    <mat-card-title style="font-family: 'Poppins'; color: #1d3557;"><i class="far fa-edit"></i>&nbsp;Editar Atividade</mat-card-title>
     <br>
     <form>
         <mat-form-field>
@@ -14,11 +14,13 @@
             <input matInput placeholder="Tipo de Atividade" [(ngModel)]="atividade.doc" name="doc" required>
         </mat-form-field>
         <br>
+        <input type="file" onchange="console.log(event.target.files)" [(ngModel)]="atividade.doc" required />
+        <br>
+        <br>
         <mat-form-field>
             <input matInput placeholder="Status Atual:" name="status" [(ngModel)]="atividade.status" disabled />
         </mat-form-field>
         <br>
-
 
     </form>
 

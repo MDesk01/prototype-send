@@ -10,7 +10,7 @@
         </thead>
         <tbody>
             <tr *ngFor="let atividade of atividades">
-                <th scope="row">{{atividade.id}}</th>
+                <th scope="row">#{{atividade.id}}</th>
                 <td>{{atividade.status}}</td>
                 <td>
                     <a routerLink="/processos/vizualizacao-aluno/{{atividade.id}}"> <button mat-mini-fab
