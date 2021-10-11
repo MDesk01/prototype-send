@@ -22,8 +22,8 @@ export class EdicaoComponent implements OnInit {
 
   statuss: Status[] = [
     {value: 'EM ANÁLISE', viewValue: 'EM ANÁLISE'},
-    {value: 'DEFERIDO', viewValue: 'DEFERIDO'},
-    {value: 'INDEFERIDO', viewValue: 'INDEFERIDO'}
+    {value: 'HOMOLOGADO', viewValue: 'HOMOLOGADO'},
+    {value: 'NÃO HOMOLOGADO', viewValue: 'NÃO HOMOLOGADO'}
   ];
 
 

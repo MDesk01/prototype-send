@@ -14,6 +14,10 @@
         </mat-form-field>
         <br>
         <mat-form-field>
+            <input matInput placeholder="Tipo de Atividade:" [(ngModel)]="atividade.doc" name="doc" required/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
             <input matInput placeholder="Status Inicial:" [(ngModel)]="atividade.status" name="status" disabled />
         </mat-form-field>
         <br>

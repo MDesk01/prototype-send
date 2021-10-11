@@ -6,6 +6,7 @@
 .header{
     z-index: 4;
     position: fixed;
+    background-color: #4051b6;
 }
 
 .content{

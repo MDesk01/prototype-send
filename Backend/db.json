@@ -2,16 +2,9 @@
   "atividades": [
     {
       "id": 1,
-      "name": "Curso de Angular 12",
+      "name": "Angular 12",
       "horas": "10",
-      "doc": "",
-      "status": "EM ANÁLISE"
-    },
-    {
-      "id": 2,
-      "name": "Curso VUE ",
-      "horas": "5",
-      "doc": "",
+      "doc": "Minicurso",
       "status": "EM ANÁLISE"
     }
   ]
