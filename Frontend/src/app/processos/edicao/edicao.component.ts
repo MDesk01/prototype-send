@@ -42,13 +42,13 @@ export class EdicaoComponent implements OnInit {
   updateAtividade(): void {
     this.atividadeService.update(this.atividade).subscribe(() => {
       this.atividadeService.showMessage('Atividade Auditada com sucesso!');
-      this.router.navigate(['pag-interna']);
+      this.router.navigate(['pag-aluno']);
     });
   }
 
   //botão cancelar
   cancel(): void {
-    this.router.navigate(['pag-interna'])
+    this.router.navigate(['pag-aluno'])
   }
 
 }

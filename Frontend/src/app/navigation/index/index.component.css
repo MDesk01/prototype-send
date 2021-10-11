@@ -1,12 +1,11 @@
 .sidenav{
     position: fixed;
-    border: solid 1px black;
 }
 
 .header{
     z-index: 4;
     position: fixed;
-    background-color: #4051b6;
+    background-color: #1d3557;
 }
 
 .content{

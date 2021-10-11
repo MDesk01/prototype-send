@@ -45,13 +45,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { HomeComponent } from './views/home/home.component';
 import { PagAlunoComponent } from './views/pag-aluno/pag-aluno.component';
-import { PagInternaComponent } from './views/pag-interna/pag-interna.component';
 import { VizualizacaoComponent } from './processos/vizualizacao/vizualizacao.component';
 import { AdicaoComponent } from './processos/adicao/adicao.component';
 import { ExclusaoComponent } from './processos/exclusao/exclusao.component';
 import { EdicaoComponent } from './processos/edicao/edicao.component';
 import { VizualizacaoAlunoComponent } from './processos/vizualizacao-aluno/vizualizacao-aluno.component';
-import { VizualizacaoColaboradorComponent } from './processos/vizualizacao-colaborador/vizualizacao-colaborador.component';
 
 
 
@@ -62,14 +60,12 @@ import { VizualizacaoColaboradorComponent } from './processos/vizualizacao-colab
     SidenavComponent,
     HomeComponent,
     PagAlunoComponent,
-    PagInternaComponent,
     VizualizacaoComponent,
     AdicaoComponent,
     ExclusaoComponent,
     EdicaoComponent,
-    VizualizacaoAlunoComponent,
-    VizualizacaoColaboradorComponent
-  ],
+    VizualizacaoAlunoComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

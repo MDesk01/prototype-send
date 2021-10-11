@@ -1,11 +1,11 @@
 .button-add:hover{
     transition: all 0.4s ease-in-out;
     transform: translateY(-5px);
-    background-color:  #4051b6;
+    background-color:  #457b9d;
     color: white;
 }
 .header{
-    background-color:  #4051b6;
+    background-color:  #457b9d;
     color: white;
     font-family: 'Poppins';
 }
