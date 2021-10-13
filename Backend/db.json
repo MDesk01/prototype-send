@@ -4,7 +4,7 @@
       "id": 938475,
       "name": "Angular 12",
       "horas": "10",
-      "doc": "Palestra",
+      "doc": "Curso",
       "status": "EM ANÁLISE"
     },
     {
@@ -12,7 +12,14 @@
       "name": "Minicurso 99",
       "horas": "5",
       "doc": "Minicurso",
-      "status": "EM ANÁLISE"
+      "status": "HOMOLOGADO"
+    },
+    {
+      "id": 859307,
+      "name": "Minicurso 99",
+      "horas": "2",
+      "doc": "Palestra",
+      "status": "NÃO HOMOLOGADO"
     }
   ]
 }
